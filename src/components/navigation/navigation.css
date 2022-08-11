@@ -1,0 +1,52 @@
+.bg-nav {
+  background-color: var(--secondary-color);
+  border-bottom: 3px solid var(--text-color);
+}
+
+@media screen and (max-width: 550px) {
+  .navbar-menu {
+    border-top: 3px solid var(--text-color);
+  }
+}
+
+.navbar-logo {
+  color: black;
+  font-size: 3rem;
+}
+
+.navbar-toggle {
+  background-color: var(--primary-color)!important;
+}
+
+.nav-list {
+  text-decoration: none;
+}
+
+.nav-link h3 {
+  background-color: var(--text-color);
+  color: var(--header-color);
+  border-radius: 30px;
+  font-size: 1.5rem;
+  padding: 6px 10px;
+}
+
+.nav-item h3:hover {
+  background-color: var(--primary-color);
+  box-shadow: 0px 0px 5px var(--text-color);
+  color: var(--text-color);
+  transition: all 0.5s ease-in;
+}
+
+.login-btn h2 {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  border-radius: 10px;
+  padding:5px 15px;
+}
+
+.login-btn h2:hover {
+  background-color: var(--hover-color);
+  color: var(--secondary-color);
+  box-shadow: 0px 0px 5px var(--text-color);
+  transition: all 0.5s ease-out;
+}

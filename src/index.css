@@ -1,13 +1,27 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@600&display=swap');
+
+:root {
+  --font-base: "DM Sans", sans-serif;
+  --primary-color: #251A1A;
+  --secondary-color: #9D0B0B;
+  --header-color: #E23B1E;
+  --text-color: #fade80;
+  --hover-color: #413232;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+h1, h2, h3, h4  {
+  font-family: 'Jura';
+}
+
+body {
+  background-color: var(--primary-color)!important;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  scroll-behavior: smooth;
+}
+
+.row-content {
+  margin-top: 8rem;
 }
