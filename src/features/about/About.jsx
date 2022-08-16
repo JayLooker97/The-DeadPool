@@ -1,4 +1,5 @@
-
+import { useSelector } from 'react-redux';
+import { useParams } from 'react-router-dom';
 import {
   Container,
   Row,
@@ -9,12 +10,15 @@ import {
   CardText,
   CardImg
 } from 'reactstrap';
+import { selectImageById } from './aboutSlice';
+
 
 import './about.css';
 
-const About = ({ deadpool }) => {
-  debugger
-  const { id, image } = deadpool;
+const About = () => {
+  const { image } = useParams();
+  const deadpool = useSelector(selectImageById('deadpool'));
+  console.log(deadpool);
   return (
     <Container className='container-fluid'>
       <Row className='row-content'>
@@ -28,7 +32,7 @@ const About = ({ deadpool }) => {
         </Col>
         <Col className='col-lg-6 col-12'>
           <Card>
-            <CardImg src={image} alt={id} />
+            {/* <CardImg src={image} alt={deadpool} /> */}
           </Card>
         </Col>
       </Row>

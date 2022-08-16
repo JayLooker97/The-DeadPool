@@ -13,7 +13,6 @@ const aboutSlice = createSlice({
 export const aboutReducer = aboutSlice.reducer;
 
 export const selectImageById = (id) => (state) => {
-  debugger
   return state.deadpool.aboutArray.find(
     (deadpool) => deadpool.id === parseInt(id)
   );
